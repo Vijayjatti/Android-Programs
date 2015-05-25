@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawing_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+    <com.notes.mnotes.WhiteboardDraw
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/eraser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_pencil" />
+
+</RelativeLayout>

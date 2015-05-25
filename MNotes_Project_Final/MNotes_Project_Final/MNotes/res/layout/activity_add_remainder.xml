@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TITLE" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:hint="Enter Reminder Title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/DescEditText"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:hint="Enter Description" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_description"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickDateBttn"
+            android:text="Select Date" />
+        
+
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickTimeBttn"
+            android:text="Enter Time" />
+
+        <Button
+            android:id="@+id/reminderButton"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReminderBttn"
+            android:text="Schedule" />
+
+    </LinearLayout>
+    
+
+</RelativeLayout>

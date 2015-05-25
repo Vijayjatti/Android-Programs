@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/add_todo_item"
+          android:title="Add Item"
+          android:showAsAction="ifRoom|withText" 
+          android:icon="@drawable/ic_add_photo">
+    </item>
+    
+    <item android:id="@+id/save_todo_list"
+          android:title="Save List"
+          android:showAsAction="ifRoom|withText" 
+          android:icon="@drawable/ic_action_save">
+    </item>
+    <item android:id="@+id/delete_todo_list" android:title="Delete List" android:icon="@drawable/ic_trash" android:showAsAction="never|withText"></item>
+	
+</menu>

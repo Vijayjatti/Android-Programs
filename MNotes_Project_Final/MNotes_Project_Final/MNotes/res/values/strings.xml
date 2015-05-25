@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MNotes</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="photo_taken">Photo Taken</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="to_do_list">TO DO LIST</string>
+    <string name="picture_notes">PICTURE NOTES</string>
+    <string name="meeting_reminder">REMINDER ACTIVITY</string>
+    <string name="checklist_entry">Checklist Entry</string>
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="title_activity_add_remainder">AddRemainderActivity</string>
+    <string name="whiteboard">WHITEBOARD</string>
+
+</resources>

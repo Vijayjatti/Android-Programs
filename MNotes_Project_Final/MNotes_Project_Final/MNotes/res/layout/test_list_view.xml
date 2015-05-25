@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:hint="Reminder"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Hours_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_textView"
+        android:layout_below="@+id/title_textView"
+        android:layout_marginLeft="16dp"
+        android:hint="HH:" />
+
+    <TextView
+        android:id="@+id/Minutes_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Hours_textView"
+        android:layout_alignBottom="@+id/Hours_textView"
+        android:layout_toRightOf="@+id/Hours_textView"
+        android:hint="MM" />
+
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_textView"
+        android:layout_toRightOf="@+id/Day_textView"
+        android:hint="Year" />
+
+    <TextView
+        android:id="@+id/month_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title_textView"
+        android:layout_alignBottom="@+id/title_textView"
+        android:layout_alignLeft="@+id/yearTextView"
+        android:hint="Month" />
+
+    <TextView
+        android:id="@+id/Day_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/month_textView"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/title_textView"
+        android:hint="D"
+        android:textSize="20sp" />
+
+</RelativeLayout>

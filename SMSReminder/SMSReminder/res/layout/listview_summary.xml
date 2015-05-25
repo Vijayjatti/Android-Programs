@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/theater_background" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1"
+        android:textColor="#FFFFFF"  >
+
+        <TableRow
+             android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/meeting_title"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Meeting Title"
+      			android:textColor="#FFFFFF"/>
+            <TextView 
+                android:id="@+id/user_title"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Title"
+      			android:textColor="#FFFFFF"/>
+            
+             
+        </TableRow>
+     <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        
+			<TextView 
+                android:id="@+id/meeting_Venue"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Meeting Venue"
+      			android:textColor="#FFFFFF"/>
+
+            <TextView 
+                android:id="@+id/User_pointer"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="User Venue"
+      			android:textColor="#FFFFFF"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" >
+        
+			<TextView 
+                android:id="@+id/Pointers"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Pointers"
+      			android:textColor="#FFFFFF"/>
+
+        </TableRow>
+        <TextView 
+                android:id="@+id/user_venue"
+      			android:layout_width="wrap_content"
+      			android:layout_height="180px"
+      			android:text="User_Pointers"
+      			android:textColor="#FFFFFF"/>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView 
+                android:id="@+id/meeting_Date"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Date"
+      			android:textColor="#FFFFFF"/>
+            <TextView 
+                android:id="@+id/User_Date"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="User Date"
+      			android:textColor="#FFFFFF"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView 
+                android:id="@+id/meeting_Time"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Meeting Time"
+      			android:textColor="#FFFFFF"/>
+            
+            <TextView 
+                android:id="@+id/user_time"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="user_time"
+      			android:textColor="#FFFFFF"/>
+        </TableRow>
+        
+            
+            
+            <Button 
+                android:id="@+id/EditContacts"
+             	android:layout_width="match_parent"
+             	android:layout_height="wrap_content"
+             	android:text="Contacts Set"
+             	/>
+        
+    </TableLayout>
+
+</LinearLayout>

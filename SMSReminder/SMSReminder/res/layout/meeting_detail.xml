@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/theater_background">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1" 
+        android:textColor="#FFFFFF" >
+
+        <TableRow
+             android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/meeting_title"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Meeting Title"
+      			android:textColor="#FFFFFF"/>
+            <EditText
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                android:textColor="#FFFFFF"
+                android:inputType="textCapSentences" />
+             
+        </TableRow>
+     <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        
+			<TextView 
+                android:id="@+id/meeting_Venue"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Meeting Venue"
+      			android:textColor="#FFFFFF"
+      			/>
+
+            <EditText
+                android:id="@+id/venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Venue"
+                android:textColor="#FFFFFF" 
+                android:inputType="textCapSentences"/>
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" >
+        
+			<TextView 
+                android:id="@+id/Pointers"
+      			android:layout_width="wrap_content"
+      			android:layout_height="wrap_content"
+      			android:text="Pointers"
+      			android:textColor="#FFFFFF"/>
+
+        </TableRow>
+        <EditText
+                android:id="@+id/PointerText"
+                android:layout_width="wrap_content"
+                android:layout_height="180px"
+                android:hint="Extra Points"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:maxLines="5" 
+                android:textColor="#FFFFFF"/>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button 
+                android:id="@+id/btnCalendar"
+             	android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:text="Set Date"
+             	android:textColor="#FFFFFF"/>
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <Button 
+                android:id="@+id/btnTimePicker"
+             	android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:text="Set Time"
+             	android:textColor="#FFFFFF"/>
+            
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                android:textColor="#FFFFFF" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            
+            <Button 
+                android:id="@+id/Contacts"
+             	android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:text="Select Contacts"
+             	android:onClick="sendMessage"
+             	android:textColor="#FFFFFF"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/saver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE REMINDER"
+            android:textColor="#FFFFFF" />
+
+    </TableLayout>
+
+</LinearLayout>

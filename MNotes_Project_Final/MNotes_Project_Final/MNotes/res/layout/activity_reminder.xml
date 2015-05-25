@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_remindMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B4C9DB" >
+
+        <TextView
+            android:id="@+id/remindMe_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="My Schedule"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/addReminder_imgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@+id/remindMe_text"
+            android:onClick="addReminder"
+            android:src="@drawable/addalarm" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_remindersList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/reminders_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent" />
+        
+
+        
+    </RelativeLayout>
+
+</LinearLayout>
