@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#80000000">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:id="@+id/imageView1"
+        android:src="@drawable/img1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Wallpaper"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+    
+    <HorizontalScrollView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img1"
+                android:id="@+id/imageView2"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img2"
+                android:id="@+id/imageView3"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img3"
+                android:id="@+id/imageView4"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img4"
+                android:id="@+id/imageView5"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img5"
+                android:padding="10dp"
+                android:id="@+id/imageView6"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img6"
+                android:padding="10dp"
+                android:id="@+id/imageView7"/>
+
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img7"
+                android:padding="10dp"
+                android:id="@+id/imageView8"/>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img8"
+                android:id="@+id/imageView9"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+        
+        </HorizontalScrollView>
+
+</LinearLayout>
